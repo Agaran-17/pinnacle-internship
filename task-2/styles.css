@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.search-box {
+  margin-bottom: 1.5rem;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #1e90ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.weather-result {
+  margin-top: 20px;
+}
+.date-time {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #1e90ff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.forecast-day {
+  background-color: #f0f8ff;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+body.clear {
+  background: linear-gradient(to top right, #a1c4fd, #c2e9fb);
+}
+
+body.clouds {
+  background: linear-gradient(to top right, #d7d2cc, #304352);
+}
+
+body.rain {
+  background: linear-gradient(to top right, #83a4d4, #b6fbff);
+}
+
+body.snow {
+  background: linear-gradient(to top right, #e0eafc, #cfdef3);
+}
+
+body.thunderstorm {
+  background: linear-gradient(to top right, #1f1c2c, #928dab);
+}
+
+body.drizzle {
+  background: linear-gradient(to top right, #89f7fe, #66a6ff);
+}
+
+body.mist {
+  background: linear-gradient(to top right, #c9d6ff, #e2e2e2);
+}
